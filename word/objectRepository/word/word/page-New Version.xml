@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elementDefinition xmlns="http://www.xframium.org/pageRegistry" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xframium.org/pageRegistry http://www.xframium.org/xsd/pageManagement/pageRegistry.xsd">
+<site name="word">
+  <page name="New Version" class="org.xframium.page.keyWord.KeyWordPage">
+      <element name="Title" descriptor="COMPLEX">
+<element value="//android.widget.TextView[@resource-id='android:id/alertTitle']" descriptor="XPATH" os="ANDROID"/>
+<element value="//UIAStaticText[@name='New Version Available']" descriptor="XPATH" os="IOS"/>
+</element>
+    <element name="Cancel" descriptor="COMPLEX">
+<element value="//android.widget.Button[@resource-id='android:id/button2']" descriptor="XPATH" os="ANDROID"/>
+<element value="//UIAButton[@name='Cancel']" descriptor="XPATH" os="IOS"/>
+</element>
+    <element name="Ok" descriptor="COMPLEX">
+<element value="//android.widget.Button[@resource-id='android:id/button1']" descriptor="XPATH" os="ANDROID"/>
+</element>
+
+  </page>
+</site></elementDefinition>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deviceRegistry xsi:schemaLocation="http://www.xframium.org/deviceRegistry http://www.xframium.org/xsd/deviceManagement/deviceRegistry.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.xframium.org/deviceRegistry">
+<device os="ANDROID" osVersion="6.+" model="Galaxy S.*" manufacturer="Samsung" availableDevices="1" driverType="APPIUM" name="Galaxy S ANDROID 6.+" cloud="partners" active="false"/>
+<device os="IOS" model="iPhone-.*" manufacturer="Apple" availableDevices="1" driverType="APPIUM" name="iPhone- IOS" cloud="partners" active="false"/>
+<device id="FA6BS0304695" os="Android" model="Pixel" manufacturer="Google" availableDevices="1" driverType="APPIUM" name="FA6BS0304695" cloud="partners" active="false"/>
+<device id="9EB54791" os="Android" model="Galaxy S5" manufacturer="Samsung" availableDevices="1" driverType="APPIUM" name="9EB54791" cloud="partners" active="false"/>
+<device id="ADADB879" os="Android" model="Galaxy S.*" manufacturer="Samsung" availableDevices="1" driverType="APPIUM" name="ADADB879" cloud="partners" active="false"/>
+<device id="632E9899" os="Android" model="Galaxy S.*" manufacturer="Samsung" availableDevices="1" driverType="APPIUM" name="632E9899" cloud="partners" active="false"/>
+<device id="02157DF2A1B46C22" os="Android" model="Galaxy S6" manufacturer="Samsung" availableDevices="1" driverType="APPIUM" name="02157DF2A1B46C22" cloud="partners" active="false"/>
+<device id="0715F7752C4B3038" os="Android" model="Galaxy Note5" manufacturer="Samsung" availableDevices="1" driverType="APPIUM" name="0715F7752C4B3038" cloud="partners" active="false"/>
+<device id="3B74D48CD1555F29B76D55F495D01B384E2E7F58" os="IOS" model="iPhone-7" manufacturer="Apple" availableDevices="1" driverType="APPIUM" name="iPhone 7 IOS" cloud="partners" active="false"/>
+<device id="A5644C053ACE2EB950A3FB74949CA716B23E5DDF" os="IOS" model="iPhone-6" manufacturer="Apple" availableDevices="1" driverType="APPIUM" name="iPhone 6 IOS" cloud="partners" active="false"/>
+<device id="1015FA7BCD813803" os="Android" model="Galaxy S6" manufacturer="Samsung" availableDevices="1" driverType="APPIUM" name="Galaxy S6" cloud="partners" active="true"/>
+<device id="F39C49EB5D722D6DBD14CC4366FF6E44084EC96D" os="IOS" model="iPhone-7 Plus" manufacturer="Apple" availableDevices="1" driverType="APPIUM" name="iPhone-7 Plus" cloud="partners" active="false"/>
+
+
+</deviceRegistry>

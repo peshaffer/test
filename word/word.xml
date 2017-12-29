@@ -1,0 +1,33 @@
+<xFramium xmlns="http://www.xframium.org/xFramiumDriver" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xframium.org/xFramiumDriver http://www.xframium.org/xsd/xFramiumDriver.xsd">
+<cloud provider="XML" fileName="cloudRegistry.xml" name="partners"/>
+<application provider="XML" fileName="applicationRegistry.xml" name="NOOP"/>
+<devices provider="XML" fileName="deviceRegistry.xml"/>
+<driver suiteName="word" type="APPIUM" outputFolder="test-output" displayResults="true" dryRun="false" embeddedServer="false" testNames="app-install">
+<property name="xF-ID">ea3e5d99-89eb-4717-852f-c66f3b4f0ed9</property>
+<artifact type="EXECUTION_RECORD_HTML" />
+<artifact type="FAILURE_SOURCE" />
+<artifact type="DEVICE_LOG" />
+<artifact type="EXECUTION_RECORD_HTML" />
+<artifact type="CONSOLE_LOG" />
+<artifact type="GRID_REPORT" />
+<artifact type="GRID_HTML" />
+<artifact type="SAUCE_LABS" />
+<artifact type="TIMING_HTML" />
+<artifact type="STATISTICS" />
+<extractor name="ANCHOR" descriptor="//a[@href!='#']"><description>HTML anchor tags</description></extractor>
+<extractor name="BUTTON" descriptor="//button"><description>HTML button tags</description></extractor>
+<extractor name="INPUT" descriptor="//input[@type!='hidden']"><description>HTML Input Tags</description></extractor>
+<extractor name="IOS button" descriptor="//UIAButton"><description>Apple IOS buttons</description></extractor>
+<extractor name="IOS switch" descriptor="//UIASwitch"><description>Apple IOS buttons</description></extractor>
+<extractor name="IOS table cell" descriptor="//UIATableCell"><description>Apple IOS table cell</description></extractor>
+<extractor name="IOS text field" descriptor="//UIATextField"><description>Apple IOS test field</description></extractor>
+<extractor name="Android button" descriptor="//android.widget.Button"><description>Android button</description></extractor>
+<extractor name="Android text field" descriptor="//android.widget.EditText"><description>Android text field</description></extractor>
+<extractor name="Windows Button" descriptor="//Button"><description>A Windows XAML Button</description></extractor>
+<extractor name="Windows Text" descriptor="//Text"><description>A Windows XAML Text Field</description></extractor>
+<extractor name="Windows List" descriptor="//List"><description>A Windows XAML List</description></extractor>
+</driver>
+<model provider="XML" fileName="./objectRepository/objectRepository.xml" siteName="word"/>
+<suite provider="XML" fileName="./tests/tests-word.xml"/>
+<data provider="XML" fileName="./data/testData.xml"/>
+</xFramium>
