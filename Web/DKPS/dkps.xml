@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <xFramium xmlns="http://www.xframium.org/xFramiumDriver" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xframium.org/xFramiumDriver http://www.xframium.org/xsd/xFramiumDriver.xsd"><cloud provider="LOCAL" providerType="SELENIUM" name="xFramium" userName="" password="" hostName="" proxyHost="" /><application  provider="LOCAL" name="" appPackage="" bundleId="" url="https://dkpittsburghsports.com" iosInstall="" androidInstall="" /><devices provider="LOCAL">
+<device name="Chrome Local" manufacturer="Google" model="Chrome" active="true" availableDevices="1" os="Windows" browserName="chrome" osVersion="10" cloud="EMBEDDED" />
+</devices>
+
+<driver suiteName="DKPS" type="WEB" outputFolder="test-output" displayResults="true" tagNames="demo" embeddedServer="true">
+<artifact type="EXECUTION_RECORD_HTML" />
+</driver>
+
+<model provider="LOCAL" siteName="">
+
+<page name="home">
+<element name="Login" value="//*[@id='menu-item-100936']/a" descriptor="XPATH"/>
+<element name="Our Stuff" value="//*[@id='menu-item-65439']/a[1]" descriptor="XPATH"/>
+<element name="Site Stuff" value="//*[@id='menu-item-137884']/a[1]" descriptor="XPATH"/>
+<element name="Home Button" value="//*[@id='menu-item-65432']/a[1]" descriptor="XPATH"/>
+<element name="My Account" value="//*[@id='menu-item-93419']/a[1]" descriptor="XPATH"/>
+</page>
+
+<page name="Login">
+<element name="Username" value="//*[@id='user_login']" descriptor="XPATH"/>
+<element name="Password" value="//*[@id='user_pass']" descriptor="XPATH"/>
+<element name="Log in" value="//*[@id='wp-submit']" descriptor="XPATH"/>
+</page>
+
+<page name="My Account">
+<element name="Log out" value="//*[@id='web-logout']" descriptor="XPATH"/>
+</page>
+
+</model>
+
+<suite provider="LOCAL">
+
+<test name="TC-001 Login do some shit and logout" dataProvider="DKPS User" active="true" tagNames="demo">
+
+<step name="Login" type="EXISTS" page="home" />
+<step name="Login" type="CLICK" page="home" />
+<step name="Username" type="EXISTS" page="Login" />
+<step name="Username" type="CLICK" page="Login" />
+<step name="Username" type="SET" page="Login">
+<parameter type="DATA" value="DKPS User.Username" />
+</step>
+<step name="Password" type="EXISTS" page="Login" />
+<step name="Password" type="CLICK" page="Login" />
+<step name="Password" type="SET" page="Login">
+<parameter type="DATA" value="DKPS User.Password" />
+</step>
+<step name="Log in" type="EXISTS" page="Login" />
+<step name="Log in" type="CLICK" page="Login" />
+<step name="Our Stuff" type="EXISTS" page="home" />
+<step name="Our Stuff" type="MOUSE" page="home">
+<parameter type="STATIC" value="MOVE_TO"/>
+</step>
+<step name="Site Stuff" type="EXISTS" page="home" />
+<step name="Site Stuff" type="CLICK" page="home" />
+<step name="Home Button" type="EXISTS" page="home" />
+<step name="Home Button" type="CLICK" page="home" />
+<step name="My Account" type="EXISTS" page="home" />
+<step name="My Account" type="CLICK" page="home" />
+<step name="Log Out" type="EXISTS" page="My Account" />
+<step name="Log Out" type="CLICK" page="My Account" />
+</test>
+
+
+</suite>
+<data provider="XML" fileName="./data/testData.xml"/>
+</xFramium>
+
